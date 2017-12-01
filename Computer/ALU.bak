@@ -33,7 +33,7 @@ LIBS:contrib
 LIBS:valves
 EELAYER 25 0
 EELAYER END
-$Descr A0 46811 33110
+$Descr A2 23386 16535
 encoding utf-8
 Sheet 2 2
 Title ""
