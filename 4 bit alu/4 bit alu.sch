@@ -31,6 +31,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:4 bit alu-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -348,8 +349,6 @@ Entry Wire Line
 Entry Wire Line
 	5500 3650 5600 3750
 Entry Wire Line
-	5500 3800 5600 3900
-Entry Wire Line
 	5500 3900 5600 4000
 Text Label 5700 4150 0    60   ~ 0
 S0
@@ -361,8 +360,6 @@ Text Label 5650 3650 0    60   ~ 0
 A3
 Text Label 5650 3750 0    60   ~ 0
 A1
-Text Label 5650 3900 0    60   ~ 0
-A4
 Text Label 5650 4000 0    60   ~ 0
 A2
 Text Label 5650 3150 0    60   ~ 0
@@ -577,8 +574,6 @@ Wire Wire Line
 	5700 4600 5600 4600
 Wire Wire Line
 	5600 4000 5700 4000
-Wire Wire Line
-	5700 3900 5600 3900
 Wire Wire Line
 	5600 3750 5700 3750
 Wire Wire Line
@@ -959,9 +954,12 @@ F 3 "" H 10850 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5700 4150 5400 4150
-Wire Wire Line
-	5400 4150 5400 4400
+	5400 3850 5400 4400
 Wire Wire Line
 	5400 4400 6950 4400
+NoConn ~ 7100 2150
+Wire Wire Line
+	5400 3850 5700 3850
+Wire Wire Line
+	5700 3850 5700 3900
 $EndSCHEMATC
