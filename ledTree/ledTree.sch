@@ -484,12 +484,12 @@ VCC
 Text GLabel 2550 3650 2    60   Input ~ 0
 VCC
 $Comp
-L POT RV?
+L POT RV1
 U 1 1 5A2479DB
 P 3450 1900
-F 0 "RV?" V 3275 1900 50  0000 C CNN
+F 0 "RV1" V 3275 1900 50  0000 C CNN
 F 1 "POT" V 3350 1900 50  0000 C CNN
-F 2 "" H 3450 1900 50  0001 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3339S_Vertical" H 3450 1900 50  0001 C CNN
 F 3 "" H 3450 1900 50  0001 C CNN
 	1    3450 1900
 	-1   0    0    1   
@@ -517,4 +517,19 @@ Wire Wire Line
 	3700 1700 3700 2500
 Wire Wire Line
 	3700 2500 4200 2500
+$Comp
+L CP C1
+U 1 1 5A2482EF
+P 4200 1400
+F 0 "C1" H 4225 1500 50  0000 L CNN
+F 1 "CP" H 4225 1300 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 4238 1250 50  0001 C CNN
+F 3 "" H 4200 1400 50  0001 C CNN
+	1    4200 1400
+	1    0    0    -1  
+$EndComp
+Text GLabel 4200 1250 1    60   Input ~ 0
+VCC
+Text GLabel 4200 1550 3    60   Input ~ 0
+GND
 $EndSCHEMATC
