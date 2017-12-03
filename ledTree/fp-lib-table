@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name ledTree)(type KiCad)(uri /home/rocket3989/Documents/kicad/ledTree)(options "")(descr ""))
+  (lib (name VIA)(type KiCad)(uri /home/rocket3989/Documents/kicad/ledTree/VIA)(options "")(descr ""))
+)
