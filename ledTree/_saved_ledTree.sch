@@ -484,12 +484,12 @@ VCC
 Text GLabel 2550 3650 2    60   Input ~ 0
 VCC
 $Comp
-L POT RV?
+L POT RV1
 U 1 1 5A2479DB
 P 3450 1900
-F 0 "RV?" V 3275 1900 50  0000 C CNN
+F 0 "RV1" V 3275 1900 50  0000 C CNN
 F 1 "POT" V 3350 1900 50  0000 C CNN
-F 2 "" H 3450 1900 50  0001 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3339S_Vertical" H 3450 1900 50  0001 C CNN
 F 3 "" H 3450 1900 50  0001 C CNN
 	1    3450 1900
 	-1   0    0    1   
