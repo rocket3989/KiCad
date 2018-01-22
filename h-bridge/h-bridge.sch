@@ -31,6 +31,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:Arduino_As_Uno-cache
 LIBS:h-bridge-cache
 EELAYER 25 0
 EELAYER END
@@ -50,17 +51,6 @@ Text Label 8870 4290 0    60   ~ 0
 R
 Text Label 8430 4380 0    60   ~ 0
 C
-$Comp
-L current U?
-U 1 1 5A571096
-P 8770 3970
-F 0 "U?" V 10120 4270 60  0001 C CNN
-F 1 "current" H 9520 4320 60  0001 C CNN
-F 2 "" H 8770 3970 60  0001 C CNN
-F 3 "" H 8770 3970 60  0001 C CNN
-	1    8770 3970
-	1    0    0    -1  
-$EndComp
 $Comp
 L C C?
 U 1 1 5A5710A2
@@ -126,17 +116,6 @@ Text Label 6280 3100 0    60   ~ 0
 -
 Text Label 6500 2700 0    60   ~ 0
 V
-$Comp
-L current U?
-U 1 1 5A570CD7
-P 7090 2790
-F 0 "U?" V 8440 3090 60  0001 C CNN
-F 1 "current" H 7840 3140 60  0001 C CNN
-F 2 "" H 7090 2790 60  0001 C CNN
-F 3 "" H 7090 2790 60  0001 C CNN
-	1    7090 2790
-	0    1    -1   0   
-$EndComp
 Text Label 6790 3150 0    60   ~ 0
 R2
 Text Label 6390 3150 0    60   ~ 0
@@ -146,7 +125,7 @@ Wire Wire Line
 Wire Wire Line
 	6250 2750 6250 3000
 Wire Wire Line
-	6450 2750 6250 2750
+	6250 2750 6500 2750
 Wire Wire Line
 	6700 3000 6600 3000
 Wire Wire Line
@@ -154,18 +133,7 @@ Wire Wire Line
 Wire Wire Line
 	7050 2750 7050 3000
 Wire Wire Line
-	6850 2750 7050 2750
-$Comp
-L vSource U?
-U 1 1 5A570C05
-P 6650 2750
-F 0 "U?" H 8100 3050 60  0001 C CNN
-F 1 "vSource" H 8250 2500 60  0001 C CNN
-F 2 "" H 8100 3050 60  0001 C CNN
-F 3 "" H 8100 3050 60  0001 C CNN
-	1    6650 2750
-	0    1    1    0   
-$EndComp
+	6800 2750 7050 2750
 $Comp
 L R R?
 U 1 1 5A570BFA
@@ -188,8 +156,6 @@ F 3 "" H 6450 3000 50  0001 C CNN
 	1    6450 3000
 	0    -1   -1   0   
 $EndComp
-Text Label 3490 3340 0    60   ~ 0
-Vs
 Text Label 4460 3450 0    60   ~ 0
 -
 Text Label 4460 3230 0    60   ~ 0
@@ -199,9 +165,9 @@ Text Label 3910 3650 0    60   ~ 0
 Text Label 4110 3650 0    60   ~ 0
 +
 Wire Wire Line
-	3700 3550 3700 3500
+	3700 3450 3700 3550
 Wire Wire Line
-	3900 3550 3700 3550
+	3700 3550 3900 3550
 Wire Wire Line
 	4400 3550 4200 3550
 Wire Wire Line
@@ -213,7 +179,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 3050 3850 3050
 Wire Wire Line
-	3700 3100 3700 3050
+	3700 3050 3700 3150
 $Comp
 L SW_DPST_x2 SW?
 U 1 1 5A570102
@@ -247,41 +213,190 @@ F 3 "" H 4050 3550 50  0001 C CNN
 	1    4050 3550
 	0    1    1    0   
 $EndComp
-$Comp
-L vSource U?
-U 1 1 5A57001B
-P 3700 3300
-F 0 "U?" H 5150 3600 60  0001 C CNN
-F 1 "vSource" H 5300 3050 60  0001 C CNN
-F 2 "" H 5150 3600 60  0001 C CNN
-F 3 "" H 5150 3600 60  0001 C CNN
-	1    3700 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L current U?
-U 1 1 5A56FB94
-P 4440 3090
-F 0 "U?" V 5790 3390 60  0001 C CNN
-F 1 "current" H 5190 3440 60  0001 C CNN
-F 2 "" H 4440 3090 60  0001 C CNN
-F 3 "" H 4440 3090 60  0001 C CNN
-	1    4440 3090
-	0    1    -1   0   
-$EndComp
 Text Label 4020 3430 0    60   ~ 0
 C
 Text Label 4470 3350 0    60   ~ 0
 R
 $Comp
-L compare U?
-U 1 1 5A56B162
-P 5000 4500
-F 0 "U?" H 5100 5100 60  0001 C CNN
-F 1 "compare" H 5100 5100 60  0001 C CNN
-F 2 "" H 5100 5100 60  0001 C CNN
-F 3 "" H 5100 5100 60  0001 C CNN
-	1    5000 4500
+L comp U?
+U 1 1 5A57D267
+P 1250 1050
+F 0 "U?" H 2600 925 60  0001 C CNN
+F 1 "comp" H 2900 625 60  0001 C CNN
+F 2 "" H 2900 625 60  0001 C CNN
+F 3 "" H 2900 625 60  0001 C CNN
+	1    1250 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L vSource U?
+U 1 1 5A57D480
+P 3700 3300
+F 0 "U?" H 5050 3425 60  0001 C CNN
+F 1 "vSource" H 5050 3625 60  0001 C CNN
+F 2 "" H 3700 3300 60  0001 C CNN
+F 3 "" H 3700 3300 60  0001 C CNN
+	1    3700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L vSource U?
+U 1 1 5A57D7A3
+P 1350 4850
+F 0 "U?" H 2700 4975 60  0001 C CNN
+F 1 "vSource" H 2700 5175 60  0001 C CNN
+F 2 "" H 1350 4850 60  0001 C CNN
+F 3 "" H 1350 4850 60  0001 C CNN
+	1    1350 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L comp U?
+U 1 1 5A57D7AE
+P 2250 4850
+F 0 "U?" H 3600 4725 60  0001 C CNN
+F 1 "comp" H 3900 4425 60  0001 C CNN
+F 2 "" H 3900 4425 60  0001 C CNN
+F 3 "" H 3900 4425 60  0001 C CNN
+	1    2250 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L vSource U?
+U 1 1 5A57D7B9
+P 6650 2750
+F 0 "U?" H 8000 2875 60  0001 C CNN
+F 1 "vSource" H 8000 3075 60  0001 C CNN
+F 2 "" H 6650 2750 60  0001 C CNN
+F 3 "" H 6650 2750 60  0001 C CNN
+	1    6650 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5A57D7F6
+P 1550 4650
+F 0 "R?" V 1630 4650 50  0001 C CNN
+F 1 "R" V 1550 4650 50  0001 C CNN
+F 2 "" V 1480 4650 50  0001 C CNN
+F 3 "" H 1550 4650 50  0001 C CNN
+	1    1550 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 4450 1350 4700
+Wire Wire Line
+	1350 4450 2250 4450
+Wire Wire Line
+	1550 4800 1550 4900
+Wire Wire Line
+	1350 5000 1350 5250
+Wire Wire Line
+	1350 5250 2250 5250
+Wire Wire Line
+	1550 4850 1650 4850
+Wire Wire Line
+	1650 4850 1650 4950
+Wire Wire Line
+	1650 4950 1950 4950
+Connection ~ 1550 4850
+$Comp
+L GNDREF #PWR?
+U 1 1 5A57D92D
+P 1700 5250
+F 0 "#PWR?" H 1700 5000 50  0001 C CNN
+F 1 "GNDREF" H 1700 5100 50  0001 C CNN
+F 2 "" H 1700 5250 50  0001 C CNN
+F 3 "" H 1700 5250 50  0001 C CNN
+	1    1700 5250
+	1    0    0    -1  
+$EndComp
+Text GLabel 1850 4750 0    60   Input ~ 0
+Sig
+Wire Wire Line
+	1850 4750 1950 4750
+Wire Wire Line
+	2250 5250 2250 5050
+Wire Wire Line
+	2250 4450 2250 4650
+Wire Wire Line
+	1550 4500 1550 4450
+Connection ~ 1550 4450
+$Comp
+L R R?
+U 1 1 5A57D801
+P 1550 5050
+F 0 "R?" V 1630 5050 50  0001 C CNN
+F 1 "R" V 1550 5050 50  0001 C CNN
+F 2 "" V 1480 5050 50  0001 C CNN
+F 3 "" H 1550 5050 50  0001 C CNN
+	1    1550 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 5250 1550 5200
+Connection ~ 1550 5250
+Text Label 3490 3340 0    60   ~ 0
+Vs
+Text Label 1200 4750 0    60   ~ 0
+Vs
+Text Label 1380 4690 0    60   ~ 0
+R1
+Text Label 1380 5100 0    60   ~ 0
+R2
+$Comp
+L R R?
+U 1 1 5A5FCB81
+P 4250 4650
+F 0 "R?" V 4330 4650 50  0001 C CNN
+F 1 "R" V 4250 4650 50  0001 C CNN
+F 2 "" V 4180 4650 50  0001 C CNN
+F 3 "" H 4250 4650 50  0001 C CNN
+	1    4250 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5A5FCB8C
+P 4250 5050
+F 0 "R?" V 4330 5050 50  0001 C CNN
+F 1 "R" V 4250 5050 50  0001 C CNN
+F 2 "" V 4180 5050 50  0001 C CNN
+F 3 "" H 4250 5050 50  0001 C CNN
+	1    4250 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5A5FCB97
+P 4250 5450
+F 0 "R?" V 4330 5450 50  0001 C CNN
+F 1 "R" V 4250 5450 50  0001 C CNN
+F 2 "" V 4180 5450 50  0001 C CNN
+F 3 "" H 4250 5450 50  0001 C CNN
+	1    4250 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L comp U?
+U 1 1 5A5FCBA2
+P 4900 4750
+F 0 "U?" H 6250 4625 60  0001 C CNN
+F 1 "comp" H 6550 4325 60  0001 C CNN
+F 2 "" H 6550 4325 60  0001 C CNN
+F 3 "" H 6550 4325 60  0001 C CNN
+	1    4900 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L comp U?
+U 1 1 5A5FCBAD
+P 4900 5250
+F 0 "U?" H 6250 5125 60  0001 C CNN
+F 1 "comp" H 6550 4825 60  0001 C CNN
+F 2 "" H 6550 4825 60  0001 C CNN
+F 3 "" H 6550 4825 60  0001 C CNN
+	1    4900 5250
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

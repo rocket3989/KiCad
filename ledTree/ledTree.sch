@@ -251,7 +251,6 @@ Text GLabel 2250 1900 0    60   Input ~ 0
 VCC
 Text GLabel 2250 1800 0    60   Input ~ 0
 GND
-NoConn ~ 3250 1800
 $Comp
 L SW_Push SW1
 U 1 1 5A224F8A
@@ -263,10 +262,6 @@ F 3 "" H 2950 2850 50  0001 C CNN
 	1    2950 2650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3250 2200 3300 2200
-Wire Wire Line
-	3300 2200 3300 2650
 Wire Wire Line
 	3300 2650 3150 2650
 Text GLabel 2750 2650 0    60   Input ~ 0
@@ -532,4 +527,12 @@ Text GLabel 4200 1250 1    60   Input ~ 0
 VCC
 Text GLabel 4200 1550 3    60   Input ~ 0
 GND
+Wire Wire Line
+	3300 2650 3300 2300
+Wire Wire Line
+	3300 2300 2900 2300
+Wire Wire Line
+	2900 2300 2900 1800
+Wire Wire Line
+	2900 1800 3250 1800
 $EndSCHEMATC

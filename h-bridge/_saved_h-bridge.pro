@@ -1,6 +1,10 @@
-update=Fri Jan 19 14:45:23 2018
+update=Mon 31 Jul 2017 10:04:56 AM MDT
 version=1
 last_client=kicad
+[general]
+version=1
+RootSch=
+BoardNm=
 [pcbnew]
 version=1
 LastNetListRead=
@@ -59,6 +63,3 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
-LibName33=Arduino_As_Uno_R3/Arduino_As_Uno-cache
-[general]
-version=1

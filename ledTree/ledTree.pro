@@ -1,4 +1,4 @@
-update=12/1/2017 11:57:07 PM
+update=Thu Jan  4 12:56:08 2018
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=../ledTree
@@ -65,3 +63,5 @@ LibName33=valves
 LibName34=/home/rocket3989/Documents/kicad/ledTree/ws2812b
 LibName35=ws2812b
 LibName36=attiny85
+[general]
+version=1
