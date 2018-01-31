@@ -185,23 +185,19 @@ Connection ~ 2150 2600
 $Comp
 L Battery BT1
 U 1 1 5A14F4EF
-P 3950 2050
-F 0 "BT1" H 4050 2150 50  0000 L CNN
-F 1 "Battery" H 4050 2050 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" V 3950 2110 50  0001 C CNN
-F 3 "" V 3950 2110 50  0001 C CNN
-	1    3950 2050
+P 3950 2300
+F 0 "BT1" H 4050 2400 50  0000 L CNN
+F 1 "Battery" H 4050 2300 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" V 3950 2360 50  0001 C CNN
+F 3 "" V 3950 2360 50  0001 C CNN
+	1    3950 2300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3950 1850 3950 1400
 Wire Wire Line
 	3950 1400 2750 1400
 Wire Wire Line
 	2750 1400 2750 1500
 Connection ~ 2750 1500
-Wire Wire Line
-	3950 2250 3950 2800
 Wire Wire Line
 	3950 2800 2400 2800
 Wire Wire Line
@@ -209,4 +205,21 @@ Wire Wire Line
 Connection ~ 2400 2750
 Text GLabel 2150 2500 0    60   Input ~ 0
 GND
+$Comp
+L SW_DIP_x01 SW1
+U 1 1 5A7110A2
+P 3950 1750
+F 0 "SW1" H 3950 1900 50  0000 C CNN
+F 1 "SW_DIP_x01" H 3950 1600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 3950 1750 50  0001 C CNN
+F 3 "" H 3950 1750 50  0001 C CNN
+	1    3950 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 2800 3950 2500
+Wire Wire Line
+	3950 2050 3950 2100
+Wire Wire Line
+	3950 1450 3950 1400
 $EndSCHEMATC

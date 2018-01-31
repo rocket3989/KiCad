@@ -1,4 +1,4 @@
-update=Tue Jan 30 18:46:59 2018
+update=Tue Jan 30 20:34:22 2018
 version=1
 last_client=kicad
 [pcbnew]
@@ -20,9 +20,12 @@ SolderMaskMinWidth=0.000000000000
 DrawSegmentWidth=0.200000000000
 BoardOutlineThickness=0.100000000000
 ModuleOutlineThickness=0.150000000000
+[cvpcb]
+version=1
+NetIExt=net
 [eeschema]
 version=1
-LibDir=
+LibDir=../../kicad-lib
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -56,8 +59,7 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
-[cvpcb]
-version=1
-NetIExt=net
+LibName33=kicad-templates-master/Arduino_Nano/Arduino_Nano-cache
+LibName34=kicad_ArduinoNano-master/libraries/arduino_nano
 [general]
 version=1

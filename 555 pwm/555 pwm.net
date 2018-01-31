@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "/home/rocket3989/Desktop/kicad/555 pwm/555 pwm.sch")
-    (date "Mon Jan 22 08:55:17 2018")
+    (date "Tue Jan 30 18:23:18 2018")
     (tool "Eeschema 4.0.7-e2-6376~58~ubuntu16.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
