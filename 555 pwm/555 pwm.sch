@@ -31,6 +31,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:555 pwm-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -128,7 +129,7 @@ U 1 1 5A5FD659
 P 2650 3650
 F 0 "C1" H 2675 3750 50  0000 L CNN
 F 1 "C" H 2675 3550 50  0000 L CNN
-F 2 "Capacitors_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 2688 3500 50  0001 C CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 2688 3500 50  0001 C CNN
 F 3 "" H 2650 3650 50  0001 C CNN
 	1    2650 3650
 	1    0    0    -1  
@@ -147,12 +148,12 @@ $EndComp
 $Comp
 L Battery BT1
 U 1 1 5A5FD7B8
-P 2250 3250
-F 0 "BT1" H 2350 3350 50  0000 L CNN
-F 1 "Battery" H 2350 3250 50  0000 L CNN
-F 2 "Connectors:GTK2400-V2" V 2250 3310 50  0001 C CNN
-F 3 "" V 2250 3310 50  0001 C CNN
-	1    2250 3250
+P 2250 3450
+F 0 "BT1" H 2350 3550 50  0000 L CNN
+F 1 "Battery" H 2350 3450 50  0000 L CNN
+F 2 "Connectors:GTK2400-V2" V 2250 3510 50  0001 C CNN
+F 3 "" V 2250 3510 50  0001 C CNN
+	1    2250 3450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -206,11 +207,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 3650 3850 3400
 Connection ~ 3850 3400
-Wire Wire Line
-	2250 3450 2250 3850
 Connection ~ 2650 3850
-Wire Wire Line
-	2250 2650 2250 3050
 Wire Wire Line
 	3350 2650 3350 2750
 Wire Wire Line
@@ -267,4 +264,21 @@ F 3 "" H 4900 3600 50  0001 L CNN
 	1    4900 3600
 	1    0    0    -1  
 $EndComp
+$Comp
+L SW_DIP_x01 SW1
+U 1 1 5A712CFF
+P 2250 3000
+F 0 "SW1" H 2250 3150 50  0000 C CNN
+F 1 "SW_DIP_x01" H 2250 2850 50  0000 C CNN
+F 2 "Connectors:Wafer_Vertical10x5.8x7RM2.5-3" H 2250 3000 50  0001 C CNN
+F 3 "" H 2250 3000 50  0001 C CNN
+	1    2250 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 2650 2250 2700
+Wire Wire Line
+	2250 3250 2250 3300
+Wire Wire Line
+	2250 3650 2250 3850
 $EndSCHEMATC
