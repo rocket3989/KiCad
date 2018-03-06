@@ -313,8 +313,6 @@ Text GLabel 2550 900  3    60   Input ~ 0
 GND
 Text GLabel 2650 900  3    60   Input ~ 0
 Vcc
-Text GLabel 2200 900  3    60   Input ~ 0
-Vcc
 Text GLabel 3950 4600 1    60   Input ~ 0
 Vcc
 NoConn ~ 2350 3550
