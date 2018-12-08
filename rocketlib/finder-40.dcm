@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FINDER-40.31
+D FINDER 40.31, Single Pole Relay, 3.5mm Pitch, 10A
+K Single Pole Relay
+F http://gfinder.findernet.com/assets/Series/353/S40EN.pdf
+$ENDCMP
+#
+#End Doc Library

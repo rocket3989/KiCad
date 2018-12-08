@@ -1,0 +1,358 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:rocketlib
+LIBS:heart-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L WS2812 U1
+U 1 1 5AD420DF
+P 4100 1450
+F 0 "U1" H 4100 1700 60  0000 C CNN
+F 1 "WS2812" H 4100 1200 60  0000 C CNN
+F 2 "LEDs:LED_D5.0mm-4" H 4100 1750 60  0001 C CNN
+F 3 "" H 4100 1750 60  0001 C CNN
+	1    4100 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 1550 0    60   Input ~ 0
+GND
+Text GLabel 4550 1550 2    60   Input ~ 0
+VCC
+$Comp
+L WS2812 U5
+U 1 1 5AD42189
+P 5550 1450
+F 0 "U5" H 5550 1700 60  0000 C CNN
+F 1 "WS2812" H 5550 1200 60  0000 C CNN
+F 2 "LEDs:LED_D5.0mm-4" H 5550 1750 60  0001 C CNN
+F 3 "" H 5550 1750 60  0001 C CNN
+	1    5550 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 5100 1550 0    60   Input ~ 0
+GND
+Text GLabel 6000 1550 2    60   Input ~ 0
+VCC
+$Comp
+L WS2812 U9
+U 1 1 5AD4223E
+P 7050 1450
+F 0 "U9" H 7050 1700 60  0000 C CNN
+F 1 "WS2812" H 7050 1200 60  0000 C CNN
+F 2 "LEDs:LED_D5.0mm-4" H 7050 1750 60  0001 C CNN
+F 3 "" H 7050 1750 60  0001 C CNN
+	1    7050 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 6600 1550 0    60   Input ~ 0
+GND
+Text GLabel 7500 1550 2    60   Input ~ 0
+VCC
+$Comp
+L WS2812 U13
+U 1 1 5AD4226B
+P 8500 1450
+F 0 "U13" H 8500 1700 60  0000 C CNN
+F 1 "WS2812" H 8500 1200 60  0000 C CNN
+F 2 "LEDs:LED_D5.0mm-4" H 8500 1750 60  0001 C CNN
+F 3 "" H 8500 1750 60  0001 C CNN
+	1    8500 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 8050 1550 0    60   Input ~ 0
+GND
+Text GLabel 8950 1550 2    60   Input ~ 0
+VCC
+Wire Wire Line
+	4550 1350 5100 1350
+Wire Wire Line
+	6000 1350 6600 1350
+Wire Wire Line
+	7500 1350 8050 1350
+$Comp
+L WS2812 U2
+U 1 1 5AD4236C
+P 4100 2000
+F 0 "U2" H 4100 2250 60  0000 C CNN
+F 1 "WS2812" H 4100 1750 60  0000 C CNN
+F 2 "LEDs:LED_D5.0mm-4" H 4100 2300 60  0001 C CNN
+F 3 "" H 4100 2300 60  0001 C CNN
+	1    4100 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 2100 0    60   Input ~ 0
+GND
+Text GLabel 4550 2100 2    60   Input ~ 0
+VCC
+$Comp
+L WS2812 U6
+U 1 1 5AD42374
+P 5550 2000
+F 0 "U6" H 5550 2250 60  0000 C CNN
+F 1 "WS2812" H 5550 1750 60  0000 C CNN
+F 2 "LEDs:LED_D5.0mm-4" H 5550 2300 60  0001 C CNN
+F 3 "" H 5550 2300 60  0001 C CNN
+	1    5550 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 5100 2100 0    60   Input ~ 0
+GND
+Text GLabel 6000 2100 2    60   Input ~ 0
+VCC
+$Comp
+L WS2812 U10
+U 1 1 5AD4237C
+P 7050 2000
+F 0 "U10" H 7050 2250 60  0000 C CNN
+F 1 "WS2812" H 7050 1750 60  0000 C CNN
+F 2 "LEDs:LED_D5.0mm-4" H 7050 2300 60  0001 C CNN
+F 3 "" H 7050 2300 60  0001 C CNN
+	1    7050 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 6600 2100 0    60   Input ~ 0
+GND
+Text GLabel 7500 2100 2    60   Input ~ 0
+VCC
+$Comp
+L WS2812 U14
+U 1 1 5AD42384
+P 8500 2000
+F 0 "U14" H 8500 2250 60  0000 C CNN
+F 1 "WS2812" H 8500 1750 60  0000 C CNN
+F 2 "LEDs:LED_D5.0mm-4" H 8500 2300 60  0001 C CNN
+F 3 "" H 8500 2300 60  0001 C CNN
+	1    8500 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 8050 2100 0    60   Input ~ 0
+GND
+Text GLabel 8950 2100 2    60   Input ~ 0
+VCC
+Wire Wire Line
+	4550 1900 5100 1900
+Wire Wire Line
+	6000 1900 6600 1900
+Wire Wire Line
+	7500 1900 8050 1900
+$Comp
+L WS2812 U3
+U 1 1 5AD424B7
+P 4100 2500
+F 0 "U3" H 4100 2750 60  0000 C CNN
+F 1 "WS2812" H 4100 2250 60  0000 C CNN
+F 2 "LEDs:LED_D5.0mm-4" H 4100 2800 60  0001 C CNN
+F 3 "" H 4100 2800 60  0001 C CNN
+	1    4100 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 2600 0    60   Input ~ 0
+GND
+Text GLabel 4550 2600 2    60   Input ~ 0
+VCC
+$Comp
+L WS2812 U7
+U 1 1 5AD424BF
+P 5550 2500
+F 0 "U7" H 5550 2750 60  0000 C CNN
+F 1 "WS2812" H 5550 2250 60  0000 C CNN
+F 2 "LEDs:LED_D5.0mm-4" H 5550 2800 60  0001 C CNN
+F 3 "" H 5550 2800 60  0001 C CNN
+	1    5550 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 5100 2600 0    60   Input ~ 0
+GND
+Text GLabel 6000 2600 2    60   Input ~ 0
+VCC
+$Comp
+L WS2812 U11
+U 1 1 5AD424C7
+P 7050 2500
+F 0 "U11" H 7050 2750 60  0000 C CNN
+F 1 "WS2812" H 7050 2250 60  0000 C CNN
+F 2 "LEDs:LED_D5.0mm-4" H 7050 2800 60  0001 C CNN
+F 3 "" H 7050 2800 60  0001 C CNN
+	1    7050 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 6600 2600 0    60   Input ~ 0
+GND
+Text GLabel 7500 2600 2    60   Input ~ 0
+VCC
+$Comp
+L WS2812 U15
+U 1 1 5AD424CF
+P 8500 2500
+F 0 "U15" H 8500 2750 60  0000 C CNN
+F 1 "WS2812" H 8500 2250 60  0000 C CNN
+F 2 "LEDs:LED_D5.0mm-4" H 8500 2800 60  0001 C CNN
+F 3 "" H 8500 2800 60  0001 C CNN
+	1    8500 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 8050 2600 0    60   Input ~ 0
+GND
+Text GLabel 8950 2600 2    60   Input ~ 0
+VCC
+Wire Wire Line
+	4550 2400 5100 2400
+Wire Wire Line
+	6000 2400 6600 2400
+Wire Wire Line
+	7500 2400 8050 2400
+$Comp
+L WS2812 U4
+U 1 1 5AD424DA
+P 4100 3050
+F 0 "U4" H 4100 3300 60  0000 C CNN
+F 1 "WS2812" H 4100 2800 60  0000 C CNN
+F 2 "LEDs:LED_D5.0mm-4" H 4100 3350 60  0001 C CNN
+F 3 "" H 4100 3350 60  0001 C CNN
+	1    4100 3050
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 3150 0    60   Input ~ 0
+GND
+Text GLabel 4550 3150 2    60   Input ~ 0
+VCC
+Wire Wire Line
+	8950 1350 8950 1050
+Wire Wire Line
+	8950 1050 3150 1050
+Wire Wire Line
+	3150 1050 3150 1900
+Wire Wire Line
+	3150 1900 3650 1900
+Wire Wire Line
+	8950 1900 9300 1900
+Wire Wire Line
+	9300 1900 9300 2250
+Wire Wire Line
+	9300 2250 3200 2250
+Wire Wire Line
+	3200 2250 3200 2400
+Wire Wire Line
+	3200 2400 3650 2400
+Wire Wire Line
+	8950 2400 9350 2400
+Wire Wire Line
+	9350 2400 9350 2800
+Wire Wire Line
+	9350 2800 3350 2800
+Wire Wire Line
+	3350 2800 3350 2950
+Wire Wire Line
+	3350 2950 3650 2950
+NoConn ~ 4550 2950
+$Comp
+L ATTINY85 U8
+U 1 1 5B219CCD
+P 2350 1600
+F 0 "U8" H 2350 1250 60  0000 C CNN
+F 1 "ATTINY85" H 2350 2000 60  0000 C CNN
+F 2 "rocketlib:ATTINY85" H 2350 1600 60  0001 C CNN
+F 3 "" H 2350 1600 60  0001 C CNN
+	1    2350 1600
+	1    0    0    -1  
+$EndComp
+Text GLabel 1850 1400 0    60   Input ~ 0
+GND
+Text GLabel 1850 1500 0    60   Input ~ 0
+VCC
+NoConn ~ 1850 1300
+$Comp
+L SW_Push SW1
+U 1 1 5B219E52
+P 2900 750
+F 0 "SW1" H 2950 850 50  0000 L CNN
+F 1 "SW_Push" H 2900 690 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm_h4.3mm" H 2900 950 50  0001 C CNN
+F 3 "" H 2900 950 50  0001 C CNN
+	1    2900 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV1
+U 1 1 5B219EA9
+P 2400 2450
+F 0 "RV1" V 2225 2450 50  0000 C CNN
+F 1 "POT" V 2300 2450 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_ACP_CA6v_Horizontal" H 2400 2450 50  0001 C CNN
+F 3 "" H 2400 2450 50  0001 C CNN
+	1    2400 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 2400 2300 0    60   Input ~ 0
+VCC
+Text GLabel 2400 2600 0    60   Input ~ 0
+GND
+Wire Wire Line
+	2550 2450 2950 2450
+Wire Wire Line
+	2950 2450 2950 1500
+Wire Wire Line
+	2950 1500 2850 1500
+Wire Wire Line
+	2850 1400 2900 1400
+Wire Wire Line
+	2900 1400 2900 900 
+Wire Wire Line
+	2900 900  2650 900 
+Wire Wire Line
+	2650 900  2650 750 
+Wire Wire Line
+	2650 750  2700 750 
+Text GLabel 3100 750  2    60   Input ~ 0
+GND
+Wire Wire Line
+	2850 1300 3500 1300
+Wire Wire Line
+	3500 1300 3500 1350
+Wire Wire Line
+	3500 1350 3650 1350
+$EndSCHEMATC
